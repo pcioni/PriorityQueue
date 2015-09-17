@@ -7,10 +7,6 @@
 int main() {
 
   priority_queue<int> pq_int;
-
-  std::cout << "****************\n"
-            << "* Checkpoint 1 *\n"
-            << "****************" << std::endl;
   
   std::vector<int> heap_vector, empty_vector, one_vector;
   one_vector.push_back( 4 );
@@ -47,11 +43,6 @@ int main() {
   pq_int.print_heap( std::cout );
   
   
-  std::cout << "\n\n"
-            << "****************\n"
-            << "* Checkpoint 2 *\n"
-            << "****************" << std::endl;
-  
   pq_int.pop();
   std::cout << "After one pop, the size should be 7.  It is " << pq_int.size() << std::endl
             << "and the top value should be 5.  It is " << pq_int.top() << std::endl;
@@ -75,12 +66,6 @@ int main() {
   std::cout << "After constructing from a 12-value vector, the size is " << pq_float.size() << std::endl
             << "the top, which should be -4 is " << pq_float.top() << std::endl
             << "and check_heap returns " << pq_float.check_heap() << std::endl;
-  
-
-  std::cout << "\n\n"
-            << "****************\n"
-            << "* Checkpoint 3 *\n"
-            << "****************" << std::endl;
   
   heap_sort( v );
   int order_errors = 0;
